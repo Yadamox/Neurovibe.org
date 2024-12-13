@@ -20,11 +20,15 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <button class="btn">Click Me!</button>
-    <button class="btn">Click Me!</button>
-    <button class="btn">Click Me!</button>
-    <button class="btn">Click Me!</button>
-    <a href="#" class="btn btn--anker btn--accent btn--block">Anker!</a>
+    <div class="input-group">
+      <span class="icon-container">
+        <svg class="icon icon--primary">
+          <use xlink:href="icons/sprite.svg#search"></use>
+        </svg>
+      </span>
+      <input type="text" class="input" placeholder="Enter your text" />
+      <button class="btn btn--accent">Search</button>
+    </div>
 
     <!-- Navigation Section -->
 
