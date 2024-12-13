@@ -1,0 +1,137 @@
+/* Setting css */
+
+@import "./normalize.css";
+:root {
+  --color-primary: #80ced6;
+  --color-secondary: #d5f4e6;
+  --color-body: #618685;
+  --color-headings: #816ac1;
+  --color-body-darker: #505e5e;
+  --color-accent: #ff3400;
+  --color-border: #ccc;
+  --border-radius: 30px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+
+::selection {
+  background: var(--color-primary);
+  color: whitesmoke;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-headings);
+  margin-top: 1rem;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 6rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2.8rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  h4 {
+    font-size: 2.1rem;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/* Links */
+
+.link-arrow {
+  color: var(--color-accent);
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  transition: margin 0.15s;
+}
+
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
+
+/* Lists */
+
+.list {
+  list-style: none;
+  padding-left: 2rem;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+/* Navigation Section */
+
+/* Hero Section */
+
+/* Main Section */
+
+/* Feature Section */
+
+/* About Section */
+
+/* Footer Section */
